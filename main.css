@@ -1,0 +1,52 @@
+/* 删除浏览器的默认样式 */
+*{
+    list-style:none;outline:none;
+}
+/* 全局控制 */
+body{
+    font-family:"微软雅黑";text-align: center;
+}
+a{
+	text-indent: 1em;
+	display:inline-block;
+	font-size:22px;
+	color:cornflowerblue;
+	}
+a:nth-child(1){
+    text-indent:0;
+}
+a:link,a:visited{
+    text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+	color:blue;
+	}
+dl{
+    display:none;
+}
+dd{
+	line-height:38px;
+	font-size:22px;
+	font-family:"微软雅黑";
+	color:#333;
+	}
+dd:before{
+    content:url(images/11.png);
+}
+dd:nth-child(odd){
+    color:hotpink;
+}
+dd:nth-child(2) em{
+	color:goldenrod;
+	font-weight:bold;
+	font-style: normal;
+	}
+dd:nth-child(3) em{
+	color:turquoise;
+	font-weight:bold;
+	font-style: normal;
+	}
+:target{
+    display:block;
+}
